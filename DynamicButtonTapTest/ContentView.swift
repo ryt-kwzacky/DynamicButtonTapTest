@@ -10,31 +10,35 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel = ScoreViewModel()
-
     var body: some View {
-        VStack {
-            VStack(alignment: .leading) {
-                HStack {
-                    Image("line")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                    Text("LINE")
-                        .foregroundColor(.gray)
-                    Spacer()
-                    Text("now")
-                        .foregroundColor(.gray)
-                        .font(.system(size: 15))
-                }
-                Text("score: \(viewModel.score)")
+        ZStack {
+            Background()
+            VStack {
+                VStack(alignment: .leading) {
+                    HStack {
+                        Image("line")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                        Text("LINE")
+                            .foregroundColor(Color.black.opacity(0.5))
+                        Spacer()
+                        Text("now")
+                            .foregroundColor(Color.black.opacity(0.5))
+                            .font(.system(size: 15))
+                    }
+                    Text("score: \(viewModel.score)")
                     .lineLimit(10)
+                }
+                    .padding()
+                    .frame(width: UIScreen.screenWidth * (97/100))
+                    .background(TextBackgroundView())
+                Button(action: {
+                    self.viewModel.score += 1
+                }) {
+                    Text("Button")
+                }
             }
-                .padding()
-                .background(TextBackgroundView())
-            Button(action: {
-                self.viewModel.score += 1
-            }) {
-                Text("Add Score")
-            }
+            
         }
     }
 }
@@ -44,7 +48,7 @@ class ScoreViewModel: ObservableObject {
 }
 
 struct TextBackgroundView: View {
-    var color: Color = Color.gray.opacity(0.05)
+    var color: Color = Color.gray.opacity(0.7)
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -60,7 +64,6 @@ struct TextBackgroundView: View {
                 }
                 .fill(self.color)
                 .cornerRadius(12)
-                .frame(width: UIScreen.screenWidth * (97/100))
             }
         }
     }

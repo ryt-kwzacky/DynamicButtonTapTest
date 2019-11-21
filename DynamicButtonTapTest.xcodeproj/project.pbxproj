@@ -13,6 +13,7 @@
 		312AC13B23869B2F00848573 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312AC13A23869B2F00848573 /* Assets.xcassets */; };
 		312AC13E23869B2F00848573 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312AC13D23869B2F00848573 /* Preview Assets.xcassets */; };
 		312AC14123869B2F00848573 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 312AC13F23869B2F00848573 /* LaunchScreen.storyboard */; };
+		312AC1492386A12D00848573 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312AC1482386A12D00848573 /* Background.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		312AC13D23869B2F00848573 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		312AC14023869B2F00848573 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		312AC14223869B2F00848573 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		312AC1482386A12D00848573 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				312AC13423869B2D00848573 /* AppDelegate.swift */,
 				312AC13623869B2D00848573 /* SceneDelegate.swift */,
 				312AC13823869B2D00848573 /* ContentView.swift */,
+				312AC1482386A12D00848573 /* Background.swift */,
 				312AC13A23869B2F00848573 /* Assets.xcassets */,
 				312AC13F23869B2F00848573 /* LaunchScreen.storyboard */,
 				312AC14223869B2F00848573 /* Info.plist */,
@@ -149,6 +152,7 @@
 				312AC13523869B2D00848573 /* AppDelegate.swift in Sources */,
 				312AC13723869B2D00848573 /* SceneDelegate.swift in Sources */,
 				312AC13923869B2D00848573 /* ContentView.swift in Sources */,
+				312AC1492386A12D00848573 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
